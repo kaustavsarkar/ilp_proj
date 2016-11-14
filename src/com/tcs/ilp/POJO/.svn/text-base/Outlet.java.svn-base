@@ -1,0 +1,51 @@
+package com.tcs.ilp.POJO;
+
+
+
+	public class Outlet {
+		
+	    private int outletId;
+	    private String address;
+	    private String state;
+	    private String city;
+	    private long zipCode;
+	    
+	    /* ------------------- GETTER SETTERS --------------------- */
+	    
+		public int getOutletId() {
+			return outletId;
+		}
+		public void setOutletId(int outletId) {
+			this.outletId = outletId;
+		}
+		public String getAddress() {
+			return address;
+		}
+		public void setAddress(String address) {
+			this.address = address;
+		}
+		public String getState() {
+			return state;
+		}
+		public void setState(String state) {
+			this.state = state;
+		}
+		public String getCity() {
+			return city;
+		}
+		public void setCity(String city) {
+			this.city = city;
+		}
+		public long getZipCode() {
+			return zipCode;
+		}
+		public void setZipCode(long zipCode) {
+			this.zipCode = zipCode;
+		}
+	    
+	    
+	    
+	}
+
+
+

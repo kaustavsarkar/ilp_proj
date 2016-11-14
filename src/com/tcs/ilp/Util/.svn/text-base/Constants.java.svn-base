@@ -1,0 +1,69 @@
+package com.tcs.ilp.Util;
+
+public interface Constants {
+	//---------------------------Customer Constants------------------------------------------------------//
+	String CUSTOMERVIEWALL = "SELECT * from USER_REGISTRATION_F where category='CUSTOMER' ORDER BY ID";
+	
+	String CUSTOMERDELETE = "DELETE USER_REGISTRATION_F where ID=?";
+	
+	String CUSTOMERSELECT = "SELECT * from USER_REGISTRATION_F where ID=";
+	
+	//---------------------------ITEM Constants------------------------------------------------------//
+	
+	String ADDITEM = "INSERT INTO ITEM_F (ITEMID,ITEMNAME,DEPARTMENTID,PRICE,QUANTITY) VALUES (SEQUENCEITEMID.NEXTVAL,?,?,?,?)";
+	
+	String SELECTITEMSEQUENCE = "SELECT SEQUENCEITEMID.CURRVAL FROM DUAL";
+	
+	String SELECTITEMBYNAME = "SELECT ITEMNAME FROM ITEM_F WHERE ITEMNAME=?";
+	
+	//String DELETEAllITEM = "DELETE ITEM_F WHERE ITEMID IN (?)";
+	
+	String VIEWAllITEMS = "SELECT * FROM ITEM_F ORDER BY ITEMID";
+	
+	String SELECTITEMBYID = "SELECT * FROM ITEM_F WHERE ITEMID=?";
+	
+	String UPDATEITEM = "UPDATE ITEM_F SET ITEMNAME=?,DEPARTMENTID=?,PRICE=?,QUANTITY=? WHERE ITEMID=? ";
+	
+	String DELETEITEM = "DELETE ITEM_F WHERE ITEMID=? ";
+	
+	//---------------------------DEPARTMENT Constants------------------------------------------------------//
+
+	String ADDDEPARTMENT = "INSERT INTO DEPARTMENT_F (DEPARTMENTID,DEPARTMENTNAME) VALUES (SEQUENCEDEPARTMENTID.NEXTVAL,?)";
+			
+	String SELECTDEPARTMENTBYNAME = "SELECT * FROM DEPARTMENT_F WHERE DEPARTMENTNAME=?";
+
+	String SELECTDEPARTMENTSEQUENCE= "SELECT SEQUENCEDEPARTMENTID.CURRVAL AS DEPARTMENTID FROM DUAL";
+	
+	String VIEWDEPARTMENT = "SELECT * FROM DEPARTMENT_F ORDER BY DEPARTMENTID";
+	
+	String UPDATEDEPARTMENT = "UPDATE DEPARTMENT_F SET DEPARTMENTNAME=? WHERE DEPARTMENTID=?";
+	
+	String DELETEDEPARTMENT="DELETE DEPARTMENT_F WHERE DEPARTMENTID=?";
+	
+	String SELECTDEPARTMENTBYID="SELECT * FROM DEPARTMENT_F WHERE DEPARTMENTID=?";
+	
+	//---------------------------OUTLET Constants------------------------------------------------------//
+	
+	String ADDOUTLET = "insert into OUTLET_F (outletid,ADDress,state,city,zipcode) values(SEQUENCEOUTLETID.nextval,?,?,?,?)";
+
+	String SELECTOUTLETSEQUENCE = "SELECT SEQUENCEOUTLETID.currval as outletid from dual";
+	
+	String VIEWOUTLETBYID = "SELECT * from OUTLET_F order by outletid";
+	
+	String UPDATEOUTLET = "UPDATE OUTLET_F set ADDress=?,state=?,city=?,zipcode=? where outletid=?";
+	
+	String DELETEOUTLET="DELETE OUTLET_F where outletid=?";
+	
+	 String SELECTOUTLETBYID="select * from OUTLET_F where outletid=?";
+	
+	 //String DELETEALLOUTLET="DELETE OUTLET_F WHERE outletid IN (?)";
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

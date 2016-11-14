@@ -1,0 +1,6 @@
+@CHARSET "ISO-8859-1";
+.body {
+	visibility:hidden;
+	}.print {
+		visibility:visible;
+	}

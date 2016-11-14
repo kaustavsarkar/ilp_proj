@@ -1,0 +1,24 @@
+1. Need to check if user is already logged in the web site or not.
+
+Solution:
+
+Create a flag(0/1) in database.
+Always set that flag as '1' whenever a user logs in.
+Whenever a user logs in, check the flag value.
+    if flag value is '1', ask the user to log in and log out the other session(log out to be done before log in.)
+    if the flag value is '0', the user logs in normally.
+    
+Design:
+When a user clicks on Log in.
+check the flag value
+
+
+2. Components to be designed
+    a.Config Reader
+    b.Session Cache
+    c.Cookie Cache
+    
+    CONFIG READER: 
+        a. From servlet to servlet.
+        b. From Servlet to POJO
+        c. From Service to DAO
